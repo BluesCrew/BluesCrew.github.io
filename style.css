@@ -138,6 +138,7 @@ body {
   background-color: darkcyan;
   border: 5px solid #292929;
   width: fit-content;
+  width: -moz-fit-content;
   margin: auto;
 }
 
