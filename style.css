@@ -113,6 +113,7 @@ body {
   font-family: sans-serif;
   color: #777777;
   background: #292929;
+  height: 100%;
 }
 
 .container{
@@ -124,8 +125,10 @@ body {
 }
 
 .header{
-  width: 65%;
+  width: 90%;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   border: 3px solid black;
@@ -160,19 +163,133 @@ body {
   font-size: 25px;
 }
 
-.part p img{
+.part img{
   display:block;
   max-width: 80%;
   margin:auto;
 }
 
-.part ul li{
+.part ul:not(.element_formation) li{
   text-align: left;
   font-size: 25px;
 }
 
-.part p{
-  text-align: left;
+ul.element_formation{
+  padding-left: 0px;
+}
+
+ul.element_formation>li{
+  --size: 100px;
+  position: relative;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+ul.element_formation>li>strong{
+  font-size: xx-large;
+  display: block;
+}
+
+ul.element_formation>li>img{
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  border: 5px solid;
+}
+
+ul.element_formation li:after{
+  position: relative;
+  display: block;
+  content: url(assets/arrow.svg);
+  max-width:fit-content;
+}
+
+ul.element_formation li:first-child:after{
+  top: 1em;
+  left: 14em;
+  -webkit-transform:  rotate(225deg) scale(5);
+  -ms-transform: rotate(225deg) scale(5);
+  transform: rotate(225deg) scale(5);
+}
+
+ul.element_formation li:nth-child(2):after{
+  left: 12em;
+  top: -4em;
+  -webkit-transform: rotate(90deg) scale(5);
+  -ms-transform: rotate(90deg) scale(5);
+  transform: rotate(90deg) scale(5);
+}
+
+ul.element_formation li:last-child:after{
+  left: -1.5em;
+  top: -10em;
+  -webkit-transform: rotate(315deg) scale(5);
+  -ms-transform: rotate(315deg) scale(5);
+  transform: rotate(315deg) scale(5);
+}
+
+
+ul.element_formation li:first-child{
+  display: block;
+  margin-bottom: 100px;
+}
+
+ul.element_formation li:nth-child(2){
+  display: inline-block;
+  right: calc(25% - var(--size)/2 - 5px); /* to space eaqually offset the margin by 25% - the size - the border */
+}
+
+ul.element_formation li:last-child{
+  display: inline-block;
+  left: calc(25% - var(--size)/2 - 5px); /* to space eaqually offset the margin by 25% - the size - the border */
+}
+
+.discord{
+  height: 400px;
+  background-color: #5865F2;
+  overflow: hidden;
+}
+
+.discord>div{
+  padding: 20px;
+  max-width: 50%;
+}
+
+.discord>div>a{
   padding: 10px;
-  font-size: 25px;
+  border-radius: 10px;
+  background-color: rgb(55, 57, 59);
+  border: #57F287 solid 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.discord>iframe{
+  float: right;
+  width: 30%;
+  height:100%;
+}
+
+.about{
+  background-color: #a1292b;
+  padding: 5px;
+}
+
+a{
+  text-decoration:underline;
+  color: #0000ff;
+}
+
+.content>div{
+  border-radius: 30px;
+  box-shadow: 0 10px 20px black;
+  font-size: x-large;
+  margin-bottom: 50px;
+}
+
+img.arrow{
+  display: inline;
+  -webkit-transform: rotate(90deg) translateX(5px);
+  -ms-transform: rotate(90deg) translateX(5px);
+  transform: rotate(90deg) translateX(5px);
 }
