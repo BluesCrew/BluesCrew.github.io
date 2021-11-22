@@ -8,14 +8,14 @@
 </head>
 
 <body>
-  <ul class="gray">
+  <ul class="nav">
     <li>
-      <a class="active" href="index.html">Home</a>
+      <a href="index.html">Home</a>
     </li>
     <li class="dropdown">
-      <a onclick="this.classList.toggle('toggled');">Projects</a>
+      <a class="holdsActive" onclick="this.classList.toggle('toggled');">Projects</a>
       <div class="dropdown-content">
-        <a href="rpg.html">rpg</a>
+        <a class="active" href="rpg.html">rpg</a>
       </div>
     </li>
   </ul>
@@ -23,20 +23,10 @@
   <br>
   <br>
   <div class="container">
-
     <div class="content">
       <h1><strong>Anathema</strong></h1><br>
-
-      <nav class="table-of-contents">
-        <h2>On this page:</h2>
-        <ul>
-          <li><a href="#specifications"><strong>Specifications</strong></a></li>
-          <li><a href="#What_to_do"><strong>What to do</strong></a></li>
-        </ul>
-      </nav><br>
-
-      <div class="part" id="specifications">
-        <h1>Specifications:</h1>
+      <div class="part" >
+        <h1>About this project</h1>
         <h2>Summary</h2>
         <nav class="table-of-contents">
           <ul>
@@ -176,16 +166,16 @@
             <li>Warrior and Swordsman: Increased Sword-type weapons damage (Swordsman increases more)</li>
             <li>Legionary: Increased Spade-type weapons damage</li>
             <li>Barbarian: Increased Battleaxe-type weapons damage</li>
-            <br>
+            <li style="list-style:none;">&nbsp;</li>
             <li>Ranger and Archer: Increased Arrow damage (Archer Increases more)</li>
             <li>Shadow Assassin: Increased Item Throwing damage</li>
             <li>Poisoner: Arrows Poison Enemies.</li>
-            <br>
+            <li style="list-style:none;">&nbsp;</li>
             <li>Rider and Holy Rider: Increased summon animals damage (Holy Rider increases more)</li>
             <li>Headless Horseman: Increases melee damage while riding your horse.</li>
             <li>Animal Master: Increases the maximum amount of animals you can summon and slightly increase their damage
               (less than Holy Rider’s perk)</li>
-            <br>
+            <li style="list-style:none;">&nbsp;</li>
             <li>Sorcerer and Wizard: Increased Spell damage (Wizard Increases more)</li>
             <li>Smart Sorcerer: Decreases mana cost</li>
             <li>Healmancer: Spells that heal players are more efficient and slightly increases spell damage</li>
@@ -198,21 +188,28 @@
             The different elements and their ecosystems are:
           </p>
           <ul class="element_formation">
-            <li style="--color:red"><img src="assets/elements/fire.jpg" alt="fire"><strong>Ignis</strong></li>
-            <li style="--color:brown"><img src="assets/elements/ground.png" alt="ground"><strong>Terra</strong></li>
-            <li style="--color:blue"><img src="assets/elements/water.png" alt="water"><strong>Aqua</strong></li>
+            <li style="color:red"><img src="assets/elements/fire.jpg" alt="fire"><strong>Ignis</strong></li>
+            <li style="color:brown"><img src="assets/elements/ground.png" alt="ground"><strong>Terra</strong></li>
+            <li style="color:blue"><img src="assets/elements/water.png" alt="water"><strong>Aqua</strong></li>
+            <img src="assets/arrow.svg" alt="-->">
+            <img src="assets/arrow.svg" alt="-->">
+            <img src="assets/arrow.svg" alt="-->">
           </ul>
           <ul class="element_formation">
-            <li style="--color:yellow"><img src="assets/elements/light.png" alt="Light"><strong>Lux</strong></li>
-            <li style="--color:black"><img src="assets/elements/darkness.png" alt="Darkness"><strong>Tenebris</strong>
-            </li>
-            <li style="--color:LightCyan"><img src="assets/elements/air.jpg" alt="Air"><strong>Aer</strong></li>
+            <li style="color:yellow"><img src="assets/elements/light.png" alt="Light"><strong>Lux</strong></li>
+            <li style="color:black"><img src="assets/elements/darkness.png" alt="Darkness"><strong>Tenebris</strong></li>
+            <li style="color:LightCyan"><img src="assets/elements/air.jpg" alt="Air"><strong>Aer</strong></li>
+            <img src="assets/arrow.svg" alt="-->">
+            <img src="assets/arrow.svg" alt="-->">
+            <img src="assets/arrow.svg" alt="-->">
           </ul>
           <ul class="element_formation">
-            <li style="--color:black"><img src="assets/elements/death.jpg" alt="Death"><strong>Mortuus</strong></li>
-            <li style="--color:LawnGreen"><img src="assets/elements/life.jpg" alt="Life"><strong>Victuus</strong></li>
-            <li style="--color:Indigo"><img src="assets/elements/necromancy.png"
-                alt="necromancy"><strong>necromancy</strong></li>
+            <li style="color:black"><img src="assets/elements/death.jpg" alt="Death"><strong>Mortuus</strong></li>
+            <li style="color:LawnGreen"><img src="assets/elements/life.jpg" alt="Life"><strong>Victuus</strong></li>
+            <li style="color:Indigo"><img src="assets/elements/necromancy.png" alt="necromancy"><strong>necromancy</strong></li>
+            <img src="assets/arrow.svg" alt="-->">
+            <img src="assets/arrow.svg" alt="-->">
+            <img src="assets/arrow.svg" alt="-->">
           </ul>
           <p>Hitting an enemy with a weapon whose element is strong against the enemy’s element will cause the final
             damage to be multiplied by 1.6</p>
